@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tourism</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        header nav ul li {
+            margin-left: 20px;
+        }
+        
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .toggle {
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .destinations, .travel-guides, .about, .contact, footer {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Travel Guides</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle"></div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Travel & Tourism Website</h1>
+        <p>Explore the world's most amazing destinations!</p>
+    </section>
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <!-- Destination Cards -->
+    </section>
+    <section class="travel-guides">
+        <h2>Travel Guides</h2>
+        <!-- Travel Guide Articles -->
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team of travelers...</p>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>Follow us on social media:</p>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Travel & Tourism. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for Dark/Light Mode Toggle
+        const toggle = document.querySelector('.toggle');
+        const body = document.querySelector('body');
+        let darkMode = false;
+
+        toggle.addEventListener('click', () => {
+            darkMode = !darkMode;
+            if (darkMode) {
+                body.style.backgroundColor = '#222';
+                body.style.color = '#fff';
+            } else {
+                body.style.backgroundColor = '#fff';
+                body.style.color = '#000';
+            }
+        });
+    </script>
+</body>
+</html>
